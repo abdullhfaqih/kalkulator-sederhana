@@ -10,8 +10,8 @@ btnEnter.addEventListener("click", () => {
   const [angkaPertama, angkaKedua] = inputNumber;
 
   // CEK JIKA USER TIDAK MEMASUKKAN ANGKA
-  if (angkaPertama.value === "" && angkaKedua.value === "") {
-    alert("MASUKKAN ANGKA YANG BENAR TOL!!!");
+  if (angkaPertama.value === "" || angkaKedua.value === "") {
+    alert("KESALAHAN INPUT");
     perintah.value = "";
   } else {
     const result = calculate(
@@ -19,10 +19,7 @@ btnEnter.addEventListener("click", () => {
       parseInt(angkaPertama.value),
       parseInt(angkaKedua.value)
     );
-    // CEK JIKA USER SALAH MEMASUKKAN PERINTAH
-    result === undefined
-      ? alert("MASUKKAN PERINTAH YANG BENAR TOL!!!")
-      : (jumlah.value = result);
+    result === undefined ? alert("KESALAHAN INPUT") : (jumlah.value = result);
   }
   perintah.value = "";
 });
