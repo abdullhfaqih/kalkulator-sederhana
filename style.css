@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.container label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.input {
+  width: 20rem;
+  height: 5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  border: 3px solid blueviolet;
+  outline: none;
+}
+
+.input-number {
+  font-size: 1.3rem;
+}
+
+.input-jumlah {
+  background-color: #fff;
+  color: #000;
+  width: 25rem;
+  height: 8rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.btn-enter {
+  border: none;
+  width: 15rem;
+  height: 5rem;
+  border: 3px solid blue;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn-enter:active {
+  transform: scale(1.03);
+  background-color: #cdcdcd;
+}
+
+.button-perintah {
+  margin-top: -1.5rem;
+  min-width: min-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.container-footer {
+  padding: 2rem;
+  text-align: center;
+  background-color: #cdcdcd;
+}
+
+.container-footer p,
+.container-footer a {
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
+.button-perintah .command-input {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 576px) {
+  .button-perintah {
+    flex-direction: column;
+  }
+}

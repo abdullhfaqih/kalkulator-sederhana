@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="margin-bottom: 20px">KALKULATOR SEDERHANA</h1>
+      <label for="input-number">Angka yang ingin dikalkulasi</label>
+      <input
+        type="number"
+        class="input-number input"
+        id="input-number"
+        placeholder="Masukkan angka pertama!" />
+      <input
+        type="number"
+        class="input-number input"
+        placeholder="Masukkan angka kedua!" />
+      <div class="button-perintah">
+        <input
+          type="text"
+          class="command-input input"
+          id="perintah"
+          placeholder="Masukkan perintahnya!" />
+        <button type="button" class="btn-enter">Enter</button>
+      </div>
+      <label for="hasil">Ini hasilnya</label>
+      <input type="text" class="input-jumlah input" id="hasil" disabled />
+    </div>
+
+    <footer>
+      <div class="container-footer">
+        <p>
+          Created by
+          <a href="https://www.instagram.com/_mnerva/" target="_blank"
+            >Abdullah Faqih</a
+          >
+          | &copy; 2023.
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
