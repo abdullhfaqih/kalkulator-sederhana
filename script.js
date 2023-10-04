@@ -11,7 +11,7 @@ btnEnter.addEventListener("click", () => {
 
   // CEK JIKA USER TIDAK MEMASUKKAN ANGKA
   if (angkaPertama.value === "" || angkaKedua.value === "") {
-    alert("KESALAHAN INPUT");
+    alert("KESALAHAN MEMASUKAN ANGKA");
     perintah.value = "";
   } else {
     const result = calculate(
@@ -19,7 +19,9 @@ btnEnter.addEventListener("click", () => {
       parseInt(angkaPertama.value),
       parseInt(angkaKedua.value)
     );
-    result === undefined ? alert("KESALAHAN INPUT") : (jumlah.value = result);
+    result === undefined
+      ? alert("KESALAHAN MEMASUKAN PERINTAH")
+      : (jumlah.value = result);
   }
   perintah.value = "";
 });
